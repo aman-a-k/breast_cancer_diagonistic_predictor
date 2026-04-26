@@ -1,31 +1,16 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/index.py",
-      "use": "@vercel/python"
+      "source": "/api/(.*)",
+      "destination": "api/index.py"
     },
     {
-      "src": "static/**",
-      "use": "@vercel/static"
+      "source": "/artifacts/(.*)",
+      "destination": "/artifacts/$1"
     },
     {
-      "src": "artifacts/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "api/index.py"
-    },
-    {
-      "src": "/artifacts/(.*)",
-      "dest": "artifacts/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "static/$1"
+      "source": "/(.*)",
+      "destination": "/static/$1"
     }
   ]
 }
