@@ -5,3 +5,5 @@ pandas
 scikit-learn
 seaborn
 python-docx
+flask
+gunicorn

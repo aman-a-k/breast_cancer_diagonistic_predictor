@@ -11,13 +11,22 @@ from docx import Document
 from docx.shared import Inches, RGBColor, Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
+import os
+
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
 FIGURES = ARTIFACTS / "figures"
-TEMP = ROOT / "tmp"
+
+# Use /tmp for all transient files on Vercel
+IS_VERCEL = os.environ.get("VERCEL") == "1"
+TEMP = Path("/tmp") if IS_VERCEL else (ROOT / "tmp")
 TEMP.mkdir(exist_ok=True)
-OUTPUT = ROOT / "report" / "Breast_Cancer_Diagnosis_Prediction_Summary.docx"
-DETAILED_OUTPUT = ROOT / "report" / "Breast_Cancer_Diagnosis_Prediction_Report.docx"
+
+REPORT_DIR = Path("/tmp") if IS_VERCEL else (ROOT / "report")
+REPORT_DIR.mkdir(exist_ok=True)
+
+OUTPUT = REPORT_DIR / "Breast_Cancer_Diagnosis_Prediction_Summary.docx"
+DETAILED_OUTPUT = REPORT_DIR / "Breast_Cancer_Diagnosis_Prediction_Report.docx"
 
 
 def add_picture(document: Document, filename: str, caption: str, width_inches: float = 5.8) -> None:
@@ -192,7 +201,7 @@ def generate_report(
     p.italic = True; p.runs[0].font.size = Pt(8)
 
     final_filename = f"Diagnostic_Report_{case_id}.docx"
-    final_output = ROOT / "report" / final_filename
+    final_output = REPORT_DIR / final_filename
     document.save(final_output)
     return final_output
 
