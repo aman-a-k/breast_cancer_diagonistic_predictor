@@ -1,0 +1,9 @@
+{
+  "name": "aiml-assignment-3",
+  "version": "1.0.0",
+  "description": "Breast Cancer Diagnosis Prediction",
+  "scripts": {
+    "dev": ".venv\\\\Scripts\\\\python src/app.py",
+    "train": ".venv\\\\Scripts\\\\python src/train_model.py"
+  }
+}

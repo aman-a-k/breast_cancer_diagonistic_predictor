@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIML Breast Cancer Diagnosis Predictor</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="scene-bg" aria-hidden="true">
+      <span class="aurora aurora-one"></span>
+      <span class="aurora aurora-two"></span>
+      <span class="aurora aurora-three"></span>
+      <span class="grid-glow"></span>
+    </div>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#predictor" data-nav="predictor">Predictor</a>
+      <a href="#analysis" data-nav="analysis">Analysis</a>
+      <a href="#report" data-nav="report">Report</a>
+    </nav>
+
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Machine Learning Diagnosis</p>
+        <h1>Breast Cancer Diagnosis Predictor</h1>
+        <p class="lede">A complete diagnostic analytics interface with model comparison, clustering analysis, live prediction insights, and report export.</p>
+      </div>
+      <div class="model-card">
+        <div class="pulse-dot"></div>
+        <span>Best model</span>
+        <strong id="bestModel">Loading...</strong>
+      </div>
+    </header>
+
+    <main>
+      <section class="page active" id="home" data-page="home">
+        <div class="panel metrics-panel">
+          <div>
+            <h2>Model Performance</h2>
+            <p>The interface uses the best model selected by macro F1-score.</p>
+          </div>
+          <div class="metrics-grid" id="metricsGrid"></div>
+        </div>
+
+        <div class="home-grid">
+          <article class="panel">
+            <h2>Project Pipeline</h2>
+            <div class="timeline">
+              <span>Dataset</span>
+              <span>Preprocessing</span>
+              <span>Model Training</span>
+              <span>Evaluation</span>
+              <span>Frontend</span>
+            </div>
+          </article>
+          <article class="panel">
+            <h2>Model Training</h2>
+            <p class="muted-text">Retrain models after data or code updates to refresh saved metrics, figures, and prediction behavior.</p>
+            <button class="primary train-button" type="button" id="trainModel">Run Training Pipeline</button>
+            <div class="train-status" id="trainStatus">Ready to execute notebook cells...</div>
+            <div class="console-box" id="trainConsole" hidden>
+              <div class="console-header">Training Output</div>
+              <pre class="console-content" id="trainLog"></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="predictor" data-page="predictor">
+        <div class="workspace">
+          <div class="predictor-stack">
+            <form class="panel predictor" id="predictionForm">
+              <div class="section-title">
+                <div>
+                  <h2>Patient Sample Inputs</h2>
+                  <p>Enter all diagnostic measurements, or load an example case.</p>
+                </div>
+                <div class="button-row">
+                  <button class="ghost" type="button" id="loadBenign">Benign Example</button>
+                  <button class="ghost" type="button" id="loadMalignant">Malignant Example</button>
+                  <button class="ghost" type="button" id="loadMean">Average Values</button>
+                </div>
+              </div>
+              <div class="feature-grid" id="featureGrid"></div>
+              <div class="inline-chart-wrap">
+                <div class="section-title compact-title">
+                  <div>
+                    <h2>Live Feature Graph</h2>
+                    <p>Clean comparison of current input values against dataset average.</p>
+                  </div>
+                  <div class="live-badge" id="liveBadge">Awaiting inputs</div>
+                </div>
+                <div class="clean-feature-chart" id="featureChart"></div>
+              </div>
+              <button class="primary" type="submit">Predict Diagnosis</button>
+            </form>
+          </div>
+
+          <aside class="panel result-panel">
+            <h2>Prediction Result</h2>
+            <div class="result-box" id="resultBox">
+              <span>No prediction yet</span>
+              <strong>Load values and run the model.</strong>
+            </div>
+            <div class="probabilities" id="probabilities"></div>
+            <hr>
+            <h3>Top Model Features</h3>
+            <div id="featureImportance"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="analysis" data-page="analysis">
+        <div class="panel analysis-panel">
+          <h2>Live Output Analysis</h2>
+          <div class="output-grid full-width-plots">
+            <div class="panel plot-panel">
+              <div id="liveClassDistChart" class="plotly-chart"></div>
+              <p class="plot-caption">Class distribution analysis</p>
+            </div>
+            <div class="panel plot-panel">
+              <div id="liveFeatureImpChart" class="plotly-chart"></div>
+              <p class="plot-caption">Random Forest feature importances</p>
+            </div>
+            <div class="panel plot-panel full-row">
+              <div id="livePcaClusterChart" class="plotly-chart"></div>
+              <p class="plot-caption">PCA decomposition with K-Means cluster assignment</p>
+            </div>
+          </div>
+
+          <div class="analysis-live-wrap">
+            <div class="section-title compact-title">
+              <div>
+                <h2>Live Input Analysis</h2>
+                <p>These plots update instantly from Predictor inputs and latest prediction output.</p>
+              </div>
+              <div class="live-badge" id="analysisLiveBadge">Awaiting inputs</div>
+            </div>
+            <div class="analysis-live-grid">
+              <figure class="live-plot-card">
+                <svg id="analysisFeaturePlot" viewBox="0 0 560 260" role="img" aria-label="Live feature comparison plot"></svg>
+                <figcaption>Top features: input values compared to dataset baseline</figcaption>
+              </figure>
+              <figure class="live-plot-card">
+                <svg id="analysisProbabilityPlot" viewBox="0 0 560 260" role="img" aria-label="Prediction probability plot"></svg>
+                <figcaption>Prediction confidence from latest model output</figcaption>
+              </figure>
+            </div>
+            <div class="analysis-summary" id="analysisSummary">
+              <div>
+                <span>Current risk trend</span>
+                <strong id="analysisRiskTrend">Stable</strong>
+              </div>
+              <div>
+                <span>Latest prediction</span>
+                <strong id="analysisPrediction">Not predicted yet</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="report" data-page="report">
+        <div class="panel report-page">
+          <h2>Report Summary</h2>
+          <p class="muted-text">Generate and download a detailed diagnostic report based on the latest model results and live input state.</p>
+          <div class="report-grid">
+            <div>
+              <span>Problem type</span>
+              <strong>Binary Classification</strong>
+            </div>
+            <div>
+              <span>Toolkit</span>
+              <strong>Scikit-learn</strong>
+            </div>
+            <div>
+              <span>Advanced concept</span>
+              <strong>PCA + K-Means</strong>
+            </div>
+            <div>
+              <span>Best model</span>
+              <strong id="reportBestModel">Loading...</strong>
+            </div>
+          </div>
+
+          <div class="report-actions">
+            <h3>Detailed Downloadable Report</h3>
+            <p class="muted-text">Generate a full Word report with model metrics, live prediction outputs, and input-vs-baseline diagnostics.</p>
+            <div class="report-action-row">
+              <button class="ghost" type="button" id="generateReport">Generate Detailed Report (.docx)</button>
+              <a class="download-link" id="downloadReport" href="#" hidden>Download Latest Report</a>
+            </div>
+            <div class="train-status" id="reportStatus">No report generated in this session.</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

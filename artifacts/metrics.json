@@ -1,0 +1,3878 @@
+{
+  "model": "Pipeline(steps=[('scaler', StandardScaler()),\n                ('classifier', SVC(C=3, probability=True, random_state=42))])",
+  "best_model_name": "Support Vector Machine",
+  "feature_names": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "target_names": [
+    "malignant",
+    "benign"
+  ],
+  "feature_means": {
+    "mean radius": 14.1273,
+    "mean texture": 19.2896,
+    "mean perimeter": 91.969,
+    "mean area": 654.8891,
+    "mean smoothness": 0.0964,
+    "mean compactness": 0.1043,
+    "mean concavity": 0.0888,
+    "mean concave points": 0.0489,
+    "mean symmetry": 0.1812,
+    "mean fractal dimension": 0.0628,
+    "radius error": 0.4052,
+    "texture error": 1.2169,
+    "perimeter error": 2.8661,
+    "area error": 40.3371,
+    "smoothness error": 0.007,
+    "compactness error": 0.0255,
+    "concavity error": 0.0319,
+    "concave points error": 0.0118,
+    "symmetry error": 0.0205,
+    "fractal dimension error": 0.0038,
+    "worst radius": 16.2692,
+    "worst texture": 25.6772,
+    "worst perimeter": 107.2612,
+    "worst area": 880.5831,
+    "worst smoothness": 0.1324,
+    "worst compactness": 0.2543,
+    "worst concavity": 0.2722,
+    "worst concave points": 0.1146,
+    "worst symmetry": 0.2901,
+    "worst fractal dimension": 0.0839
+  },
+  "benign_example": {
+    "mean radius": 13.54,
+    "mean texture": 14.36,
+    "mean perimeter": 87.46,
+    "mean area": 566.3,
+    "mean smoothness": 0.0978,
+    "mean compactness": 0.0813,
+    "mean concavity": 0.0666,
+    "mean concave points": 0.0478,
+    "mean symmetry": 0.1885,
+    "mean fractal dimension": 0.0577,
+    "radius error": 0.2699,
+    "texture error": 0.7886,
+    "perimeter error": 2.058,
+    "area error": 23.56,
+    "smoothness error": 0.0085,
+    "compactness error": 0.0146,
+    "concavity error": 0.0239,
+    "concave points error": 0.0132,
+    "symmetry error": 0.0198,
+    "fractal dimension error": 0.0023,
+    "worst radius": 15.11,
+    "worst texture": 19.26,
+    "worst perimeter": 99.7,
+    "worst area": 711.2,
+    "worst smoothness": 0.144,
+    "worst compactness": 0.1773,
+    "worst concavity": 0.239,
+    "worst concave points": 0.1288,
+    "worst symmetry": 0.2977,
+    "worst fractal dimension": 0.0726
+  },
+  "malignant_example": {
+    "mean radius": 17.99,
+    "mean texture": 10.38,
+    "mean perimeter": 122.8,
+    "mean area": 1001.0,
+    "mean smoothness": 0.1184,
+    "mean compactness": 0.2776,
+    "mean concavity": 0.3001,
+    "mean concave points": 0.1471,
+    "mean symmetry": 0.2419,
+    "mean fractal dimension": 0.0787,
+    "radius error": 1.095,
+    "texture error": 0.9053,
+    "perimeter error": 8.589,
+    "area error": 153.4,
+    "smoothness error": 0.0064,
+    "compactness error": 0.049,
+    "concavity error": 0.0537,
+    "concave points error": 0.0159,
+    "symmetry error": 0.03,
+    "fractal dimension error": 0.0062,
+    "worst radius": 25.38,
+    "worst texture": 17.33,
+    "worst perimeter": 184.6,
+    "worst area": 2019.0,
+    "worst smoothness": 0.1622,
+    "worst compactness": 0.6656,
+    "worst concavity": 0.7119,
+    "worst concave points": 0.2654,
+    "worst symmetry": 0.4601,
+    "worst fractal dimension": 0.1189
+  },
+  "metrics": {
+    "Decision Tree": {
+      "accuracy": 0.9211,
+      "precision_macro": 0.9116,
+      "recall_macro": 0.9226,
+      "f1_macro": 0.9164,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          6,
+          66
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.8666666666666667,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.896551724137931,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9565217391304348,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9361702127659575,
+          "support": 72.0
+        },
+        "accuracy": 0.9210526315789473,
+        "macro avg": {
+          "precision": 0.9115942028985508,
+          "recall": 0.9226190476190477,
+          "f1-score": 0.9163609684519443,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9234172387490467,
+          "recall": 0.9210526315789473,
+          "f1-score": 0.9215739274819479,
+          "support": 114.0
+        }
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.9474,
+      "precision_macro": 0.9435,
+      "recall_macro": 0.9435,
+      "f1_macro": 0.9435,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          3,
+          69
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9285714285714286,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9285714285714286,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9583333333333334,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9583333333333334,
+          "support": 72.0
+        },
+        "accuracy": 0.9473684210526315,
+        "macro avg": {
+          "precision": 0.9434523809523809,
+          "recall": 0.9434523809523809,
+          "f1-score": 0.9434523809523809,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "f1-score": 0.9473684210526315,
+          "support": 114.0
+        }
+      }
+    },
+    "Support Vector Machine": {
+      "accuracy": 0.9737,
+      "precision_macro": 0.9697,
+      "recall_macro": 0.9742,
+      "f1_macro": 0.9719,
+      "confusion_matrix": [
+        [
+          41,
+          1
+        ],
+        [
+          2,
+          70
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9534883720930233,
+          "recall": 0.9761904761904762,
+          "f1-score": 0.9647058823529412,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9859154929577465,
+          "recall": 0.9722222222222222,
+          "f1-score": 0.9790209790209791,
+          "support": 72.0
+        },
+        "accuracy": 0.9736842105263158,
+        "macro avg": {
+          "precision": 0.9697019325253848,
+          "recall": 0.9742063492063492,
+          "f1-score": 0.9718634306869601,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9739686589549538,
+          "recall": 0.9736842105263158,
+          "f1-score": 0.9737469960380177,
+          "support": 114.0
+        }
+      }
+    }
+  },
+  "cluster_summary": {
+    "algorithm": "K-Means clustering on two PCA components",
+    "silhouette_score": 0.5085,
+    "adjusted_rand_index_against_actual_labels": 0.6592,
+    "pca_explained_variance_ratio": [
+      0.4427,
+      0.1897
+    ],
+    "pca_points": [
+      {
+        "x": 9.1928,
+        "y": 1.9486,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.3878,
+        "y": -3.7682,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 5.7339,
+        "y": -1.0752,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 7.123,
+        "y": 10.2756,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.9353,
+        "y": -1.9481,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.3802,
+        "y": 3.9499,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.2389,
+        "y": -2.69,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.1433,
+        "y": 2.3402,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.1749,
+        "y": 3.3918,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 6.3517,
+        "y": 7.7272,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.8104,
+        "y": -2.6593,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 2.6511,
+        "y": 0.0666,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 8.185,
+        "y": 2.701,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.3421,
+        "y": -0.9683,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 4.3424,
+        "y": 4.8611,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.0757,
+        "y": 2.9771,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.2301,
+        "y": -1.5648,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 4.418,
+        "y": 1.4187,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.9487,
+        "y": -4.1143,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.2371,
+        "y": -0.1882,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.5782,
+        "y": 0.5728,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.5573,
+        "y": 1.6629,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.7332,
+        "y": 3.305,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.2085,
+        "y": -5.1284,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.9496,
+        "y": -1.5438,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 7.0986,
+        "y": 2.0186,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.5103,
+        "y": 2.1716,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.0641,
+        "y": -1.8766,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.0073,
+        "y": 0.5372,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.7153,
+        "y": -1.5237,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 6.0594,
+        "y": -0.7572,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.9022,
+        "y": 4.0053,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.5548,
+        "y": 0.3375,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.9906,
+        "y": -1.1326,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.9853,
+        "y": 0.7584,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.7664,
+        "y": -0.3544,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.2962,
+        "y": 0.9132,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.7493,
+        "y": -1.4135,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.9981,
+        "y": -3.3513,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 0.7653,
+        "y": 0.8862,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.151,
+        "y": -1.924,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -0.0933,
+        "y": 2.2608,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 9.088,
+        "y": 2.0187,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.9905,
+        "y": 0.9849,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -0.2935,
+        "y": -0.1371,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 5.3809,
+        "y": -0.1349,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -4.5819,
+        "y": 1.4842,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.7,
+        "y": 2.3523,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.1364,
+        "y": 0.0958,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.5675,
+        "y": -1.2084,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.5429,
+        "y": -1.2825,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1578,
+        "y": -1.689,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.4505,
+        "y": -0.4982,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.3026,
+        "y": -1.1309,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.6746,
+        "y": -2.1164,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.8582,
+        "y": 0.1527,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.6487,
+        "y": -2.3103,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.1769,
+        "y": 0.9721,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.7215,
+        "y": -1.7876,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.136,
+        "y": 2.4038,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.3858,
+        "y": 2.7577,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.5789,
+        "y": 3.1387,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.7591,
+        "y": 3.0117,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.3141,
+        "y": 3.268,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.6916,
+        "y": 1.5407,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.8123,
+        "y": 0.7227,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.7859,
+        "y": 2.3106,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.5186,
+        "y": -0.6583,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.33,
+        "y": 9.2025,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -3.2613,
+        "y": -0.9378,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.7046,
+        "y": -4.4371,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.3079,
+        "y": 7.3878,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 5.5037,
+        "y": 0.9383,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.3617,
+        "y": 0.1197,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.63,
+        "y": -0.6973,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.4282,
+        "y": -1.9671,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.8345,
+        "y": 1.9656,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 6.2309,
+        "y": 0.9201,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 11.6687,
+        "y": 4.7486,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.0216,
+        "y": -0.2549,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.6384,
+        "y": 1.7159,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.1675,
+        "y": 2.5145,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": 10.7692,
+        "y": -2.258,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 5.0348,
+        "y": 0.7744,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.1745,
+        "y": 0.4969,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.2882,
+        "y": -1.6682,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.6076,
+        "y": 0.1622,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 3.5836,
+        "y": -2.2067,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.9342,
+        "y": 0.9277,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.2596,
+        "y": 1.0156,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -1.5883,
+        "y": -1.6197,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.2525,
+        "y": -0.5314,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.8474,
+        "y": -2.8936,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.965,
+        "y": -0.9652,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.7759,
+        "y": 0.558,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.3962,
+        "y": -2.1235,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.5921,
+        "y": 0.2136,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.9043,
+        "y": 1.1901,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.8182,
+        "y": 0.3679,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.6163,
+        "y": 0.6389,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -0.4329,
+        "y": -1.392,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -4.555,
+        "y": 3.5288,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.4482,
+        "y": -1.4246,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.116,
+        "y": 1.8494,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.6914,
+        "y": 1.4201,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.2139,
+        "y": 4.0468,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.7493,
+        "y": 1.7976,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.159,
+        "y": -1.0357,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 13.0561,
+        "y": 0.9815,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.2287,
+        "y": 0.6674,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.4928,
+        "y": 2.5987,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.1034,
+        "y": 2.2801,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.5913,
+        "y": 3.9263,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -1.3489,
+        "y": 3.5562,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.5101,
+        "y": 3.2513,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.046,
+        "y": 0.3049,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.0971,
+        "y": 3.6671,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.1105,
+        "y": 1.5694,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.9567,
+        "y": 2.3848,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.851,
+        "y": -2.3067,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.966,
+        "y": 0.3715,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.3341,
+        "y": -1.3256,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 12.8946,
+        "y": 2.3166,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.7707,
+        "y": -0.0641,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.2025,
+        "y": -0.7356,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1434,
+        "y": -1.8774,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.6389,
+        "y": -0.9114,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 1.9191,
+        "y": -3.5381,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.4089,
+        "y": 1.3049,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": 4.6437,
+        "y": -1.482,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.8775,
+        "y": 1.4232,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.4321,
+        "y": -1.0496,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.3526,
+        "y": -1.1541,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.7091,
+        "y": -1.5682,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.1714,
+        "y": -2.8263,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.9768,
+        "y": -0.4194,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.6008,
+        "y": -0.4823,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.258,
+        "y": -0.4183,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.782,
+        "y": 0.8604,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.992,
+        "y": 1.3294,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -5.015,
+        "y": 0.5747,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.345,
+        "y": -1.2748,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.456,
+        "y": 0.8985,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.8373,
+        "y": -0.091,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.3465,
+        "y": -0.8936,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.7328,
+        "y": 3.7022,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.4,
+        "y": 4.838,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.3931,
+        "y": 1.0831,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.4123,
+        "y": -0.3896,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.0499,
+        "y": -2.2378,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.4426,
+        "y": 0.3059,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.0832,
+        "y": 7.1504,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 7.0933,
+        "y": 12.5732,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -3.7434,
+        "y": 0.2505,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.9692,
+        "y": 0.9449,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.4187,
+        "y": 0.0056,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.1008,
+        "y": -0.3788,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.7516,
+        "y": -3.0706,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.6546,
+        "y": -0.6746,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.6802,
+        "y": -1.1039,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.5978,
+        "y": 1.7857,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.3873,
+        "y": -2.911,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 6.1499,
+        "y": -2.0177,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.325,
+        "y": 1.4693,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 5.4942,
+        "y": -4.1658,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.9974,
+        "y": -2.7389,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.3867,
+        "y": 0.0069,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.2136,
+        "y": -2.039,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 5.0697,
+        "y": -1.7852,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.9777,
+        "y": -1.8428,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.5149,
+        "y": 0.1143,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.9475,
+        "y": -1.6848,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 2.8194,
+        "y": 1.2651,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.484,
+        "y": 1.6197,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.6587,
+        "y": -0.2229,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -5.3516,
+        "y": 1.0268,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.1709,
+        "y": 7.0145,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": 2.9563,
+        "y": 0.7064,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -4.9757,
+        "y": -3.3862,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.064,
+        "y": -1.2462,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 9.5127,
+        "y": -5.6035,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 9.0072,
+        "y": 0.581,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.7589,
+        "y": -1.6085,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.6594,
+        "y": 0.5399,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.39,
+        "y": -0.9892,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -3.8891,
+        "y": 0.8161,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.3649,
+        "y": -3.5745,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.8359,
+        "y": -0.3987,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.3103,
+        "y": 0.1557,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.3573,
+        "y": -1.1037,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 6.5231,
+        "y": 8.0112,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.7177,
+        "y": -0.5432,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -5.5657,
+        "y": -0.4778,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.7797,
+        "y": 2.7766,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.6115,
+        "y": 1.5614,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.819,
+        "y": -0.9701,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.4984,
+        "y": 2.2785,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.277,
+        "y": -2.4433,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.4732,
+        "y": -2.2778,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.2567,
+        "y": 0.3824,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.4734,
+        "y": 0.1169,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.6495,
+        "y": -2.1023,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 9.0366,
+        "y": -0.6552,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.5546,
+        "y": 3.0866,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.7812,
+        "y": 0.6528,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.2231,
+        "y": -0.7018,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -3.4549,
+        "y": 1.3069,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.4465,
+        "y": -2.7877,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 0.3144,
+        "y": 2.0776,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.0592,
+        "y": -2.4728,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.809,
+        "y": -3.0291,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.9987,
+        "y": -0.3968,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 12.285,
+        "y": -7.5434,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.3722,
+        "y": 2.5878,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.5088,
+        "y": 2.6146,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.3181,
+        "y": 2.1545,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.3888,
+        "y": 2.2768,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.7569,
+        "y": 1.0868,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.9436,
+        "y": -2.8483,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.2981,
+        "y": -4.6663,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.3735,
+        "y": -0.7334,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.9672,
+        "y": 0.4384,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.9758,
+        "y": 1.811,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.8032,
+        "y": 0.1665,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.4784,
+        "y": -1.4186,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.826,
+        "y": -1.2502,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.8947,
+        "y": 0.5386,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.3896,
+        "y": -0.6144,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.4573,
+        "y": -0.2017,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.7556,
+        "y": 3.4658,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.2573,
+        "y": -0.1252,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -4.0191,
+        "y": -1.3542,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.6764,
+        "y": -1.2916,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.3163,
+        "y": -3.9392,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -4.0366,
+        "y": 1.1625,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.3342,
+        "y": -1.349,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 8.4038,
+        "y": -4.1539,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.6476,
+        "y": -3.9512,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.6818,
+        "y": -1.136,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.3503,
+        "y": -2.1546,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.2277,
+        "y": -1.215,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.4776,
+        "y": -1.7411,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.3226,
+        "y": 4.7895,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -1.8501,
+        "y": -1.5841,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.7956,
+        "y": -1.0262,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.2813,
+        "y": 2.0777,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.2288,
+        "y": -1.1721,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.0259,
+        "y": 2.3613,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.5826,
+        "y": 0.7292,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.4859,
+        "y": 0.4606,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 7.1438,
+        "y": -2.0748,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.0325,
+        "y": -0.6495,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 7.085,
+        "y": 0.5282,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.3141,
+        "y": -1.7754,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.7116,
+        "y": -2.8075,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.4605,
+        "y": 0.3942,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 6.3926,
+        "y": -1.8231,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 5.2555,
+        "y": 3.8945,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 8.7339,
+        "y": 3.2799,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.6913,
+        "y": 1.0656,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.3783,
+        "y": -3.3712,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.8402,
+        "y": -3.5001,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 3.2844,
+        "y": -0.9907,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.9088,
+        "y": -3.1219,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 1.6148,
+        "y": -2.4746,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 6.6197,
+        "y": -6.0033,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.4647,
+        "y": 1.6866,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.0122,
+        "y": -1.1035,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.2843,
+        "y": 0.0095,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.7397,
+        "y": 3.1525,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.5066,
+        "y": -3.1693,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1588,
+        "y": 0.4103,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 7.6761,
+        "y": -3.0753,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.6391,
+        "y": 1.5896,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.3373,
+        "y": -3.1444,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -1.2766,
+        "y": 0.8491,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.346,
+        "y": -0.322,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.0174,
+        "y": -3.4593,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -3.4924,
+        "y": -2.6341,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.8665,
+        "y": -0.9021,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.9603,
+        "y": -1.3411,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.4707,
+        "y": -0.138,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.7851,
+        "y": -1.9019,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.6373,
+        "y": 0.5772,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.3727,
+        "y": 0.0058,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.1389,
+        "y": -1.3765,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.6869,
+        "y": 1.695,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.3121,
+        "y": -1.9785,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.4033,
+        "y": 3.7234,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.0036,
+        "y": 0.3542,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.134,
+        "y": 4.2735,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -0.4178,
+        "y": -0.8086,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.4202,
+        "y": 1.394,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.8706,
+        "y": -0.2686,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.3658,
+        "y": -0.8076,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.315,
+        "y": -1.4422,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.7697,
+        "y": -0.543,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.3859,
+        "y": -0.8241,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.7871,
+        "y": -2.533,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.3938,
+        "y": 0.754,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 6.5902,
+        "y": -1.4849,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.4553,
+        "y": 0.5919,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 7.1829,
+        "y": 0.0551,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.5788,
+        "y": 0.8916,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.057,
+        "y": -0.1792,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.0744,
+        "y": -0.3061,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.8535,
+        "y": -1.5247,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -5.3903,
+        "y": 0.5563,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.6577,
+        "y": -3.0654,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.0275,
+        "y": -2.5429,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.3478,
+        "y": -0.0686,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.2998,
+        "y": -3.1387,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.1364,
+        "y": -0.0044,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.038,
+        "y": -0.2407,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.7654,
+        "y": 4.3982,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.8712,
+        "y": -2.3392,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.7472,
+        "y": -1.7984,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.8953,
+        "y": -2.3922,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.5729,
+        "y": 6.5091,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -4.0266,
+        "y": -1.4022,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.2949,
+        "y": 3.4708,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.8348,
+        "y": -4.3215,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.8104,
+        "y": 0.3962,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 7.2365,
+        "y": -0.0357,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.1457,
+        "y": -0.7425,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.8873,
+        "y": -0.4647,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1497,
+        "y": -1.7712,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.6284,
+        "y": -1.8356,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.2505,
+        "y": -0.3485,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.1078,
+        "y": 1.122,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.7859,
+        "y": -0.2692,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.5277,
+        "y": 1.2659,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.2135,
+        "y": 1.1034,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.3864,
+        "y": -0.7611,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.81,
+        "y": -0.9099,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.3197,
+        "y": -1.5771,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.3933,
+        "y": 0.99,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.6802,
+        "y": -0.9686,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.0677,
+        "y": 1.1358,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 7.3532,
+        "y": -5.2426,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.2953,
+        "y": 0.2269,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.939,
+        "y": 2.545,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.0772,
+        "y": 1.8065,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.9752,
+        "y": -1.3326,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.1769,
+        "y": 0.9589,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.4316,
+        "y": 3.4472,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.368,
+        "y": -0.5629,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.2066,
+        "y": -1.317,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.3261,
+        "y": 0.4752,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.9288,
+        "y": 1.4615,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.0418,
+        "y": -1.3569,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 6.1823,
+        "y": 5.108,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 10.9343,
+        "y": -3.7033,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 2.1185,
+        "y": 0.2966,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.0122,
+        "y": 0.2438,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.9826,
+        "y": 0.7973,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.3579,
+        "y": 2.1278,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1939,
+        "y": -1.8492,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.9932,
+        "y": 1.6314,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1939,
+        "y": 0.5793,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.592,
+        "y": -2.7611,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.4859,
+        "y": -1.1889,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.3987,
+        "y": -0.2507,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.7796,
+        "y": -2.1243,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.14,
+        "y": -1.488,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.735,
+        "y": -3.9452,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 6.227,
+        "y": -1.3901,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.2238,
+        "y": -0.3572,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 5.3071,
+        "y": -6.7234,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 7.248,
+        "y": -3.6555,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.2072,
+        "y": 1.1762,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.4996,
+        "y": -2.0185,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.635,
+        "y": -1.9564,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.5192,
+        "y": -3.8586,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.6149,
+        "y": -1.1025,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.0961,
+        "y": -0.1298,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.0449,
+        "y": 6.4268,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -3.0667,
+        "y": -2.1821,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.6036,
+        "y": 0.2926,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.7659,
+        "y": 5.9853,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.9256,
+        "y": 2.3025,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.2883,
+        "y": 0.2013,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.5549,
+        "y": 0.9799,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.3988,
+        "y": 2.1612,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.3006,
+        "y": -0.9321,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.5429,
+        "y": -1.3171,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.0588,
+        "y": 0.3204,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.4245,
+        "y": -2.4455,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.4724,
+        "y": 3.7028,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.7035,
+        "y": -0.196,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.6434,
+        "y": 0.7869,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.5947,
+        "y": 2.6051,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.1491,
+        "y": 0.7675,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 7.6721,
+        "y": -0.8605,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.0104,
+        "y": 0.4297,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.9208,
+        "y": -1.7005,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.5007,
+        "y": 0.1067,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.9115,
+        "y": -0.6514,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.7851,
+        "y": -0.3261,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.7084,
+        "y": -0.2197,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 6.2897,
+        "y": 2.0365,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.4308,
+        "y": -0.9926,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.0014,
+        "y": -0.2933,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.4733,
+        "y": -0.335,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.6473,
+        "y": -1.2414,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.3462,
+        "y": 0.6827,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.143,
+        "y": -1.9622,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.3509,
+        "y": 0.3696,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.7634,
+        "y": -1.0786,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.9693,
+        "y": -0.1758,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.9312,
+        "y": -0.4949,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.9264,
+        "y": 0.3773,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.9962,
+        "y": 0.9599,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.1551,
+        "y": -0.438,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.9341,
+        "y": -2.1059,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -1.9296,
+        "y": 0.8925,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.6223,
+        "y": 2.5021,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 6.0036,
+        "y": -0.091,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.9219,
+        "y": -0.0092,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.3419,
+        "y": -0.0222,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.0149,
+        "y": 0.7785,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.9885,
+        "y": 2.316,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -1.6696,
+        "y": 0.8623,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.3712,
+        "y": 0.1136,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.849,
+        "y": 2.5412,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.703,
+        "y": -0.4323,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.2832,
+        "y": 2.5509,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.3142,
+        "y": 0.402,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.6591,
+        "y": -0.7823,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.9435,
+        "y": -2.03,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.9499,
+        "y": 3.0061,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.9158,
+        "y": 2.479,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.5491,
+        "y": -0.816,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 4.4423,
+        "y": -0.9924,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.195,
+        "y": -1.8054,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.6644,
+        "y": 0.4369,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.2409,
+        "y": -0.4546,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.1252,
+        "y": -1.1948,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.6153,
+        "y": -1.8321,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.211,
+        "y": -2.2351,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.3068,
+        "y": 2.185,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.4724,
+        "y": -1.4998,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -3.4547,
+        "y": -2.1365,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.9005,
+        "y": 0.7308,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.9817,
+        "y": -2.2104,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -1.2573,
+        "y": 1.0677,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.2454,
+        "y": -1.7784,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.5572,
+        "y": -1.0379,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.2493,
+        "y": -1.5888,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.3317,
+        "y": -4.0493,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.0775,
+        "y": 1.8036,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.5118,
+        "y": -2.5288,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.2171,
+        "y": 0.0299,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.1738,
+        "y": -0.4748,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.8363,
+        "y": -1.0181,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.8571,
+        "y": -1.5714,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.3286,
+        "y": 0.7771,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.8028,
+        "y": -1.6663,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1746,
+        "y": -2.0757,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.0871,
+        "y": -0.4847,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.4755,
+        "y": -1.6729,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 16.3192,
+        "y": -7.7759,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.5601,
+        "y": -2.494,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.9689,
+        "y": -0.0688,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.7574,
+        "y": -1.7939,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.3703,
+        "y": 2.11,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -0.4177,
+        "y": 0.1165,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.8384,
+        "y": 0.8992,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 5.931,
+        "y": 1.2283,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.6455,
+        "y": 3.426,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.6838,
+        "y": 1.4436,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.0417,
+        "y": -0.9033,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.3993,
+        "y": -1.7722,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.5364,
+        "y": -1.2469,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.9905,
+        "y": 1.8995,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.9982,
+        "y": -0.2064,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.5207,
+        "y": -0.9734,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1724,
+        "y": -2.0891,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.2027,
+        "y": 1.286,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.8244,
+        "y": 2.3052,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.9855,
+        "y": -0.6733,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.4811,
+        "y": -2.364,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.2721,
+        "y": 0.5098,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.2352,
+        "y": -1.2987,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.0562,
+        "y": -0.2274,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.3174,
+        "y": 4.3891,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -2.2843,
+        "y": -2.4668,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.7546,
+        "y": -1.4894,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.7263,
+        "y": 0.9982,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.7418,
+        "y": -2.452,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.8943,
+        "y": -0.9779,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.6545,
+        "y": -4.5557,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.1035,
+        "y": -1.2362,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -4.0643,
+        "y": -0.561,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.7933,
+        "y": -1.0779,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.4749,
+        "y": -1.5911,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.2294,
+        "y": 1.5159,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.5533,
+        "y": -0.7639,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 3.7157,
+        "y": -1.0587,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 5.0948,
+        "y": -2.0192,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.6006,
+        "y": -0.8385,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.7904,
+        "y": 3.3856,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.4088,
+        "y": 1.5058,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 7.2592,
+        "y": -5.4957,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.2989,
+        "y": 7.7299,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": 1.0767,
+        "y": 8.2948,
+        "label": "benign",
+        "cluster": 0
+      },
+      {
+        "x": -1.2498,
+        "y": 1.5957,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.2569,
+        "y": 4.1172,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.1665,
+        "y": -1.6657,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.0941,
+        "y": 2.8029,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.8876,
+        "y": 1.6722,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.7674,
+        "y": -2.161,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.227,
+        "y": 1.9416,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -1.1316,
+        "y": -1.411,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.7338,
+        "y": -1.9437,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": -2.3337,
+        "y": 0.7901,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 2.6972,
+        "y": -1.9437,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.379,
+        "y": -2.3334,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -0.1999,
+        "y": 1.0764,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.176,
+        "y": 1.0114,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.2926,
+        "y": 4.9642,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 8.6308,
+        "y": -3.4595,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -4.4295,
+        "y": -0.786,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.6198,
+        "y": 0.6363,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.2523,
+        "y": 1.2859,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.3529,
+        "y": 2.6733,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.8598,
+        "y": 0.0968,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.1566,
+        "y": -0.8715,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 0.3465,
+        "y": 1.5412,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.4614,
+        "y": 0.6008,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.5301,
+        "y": 0.4052,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.7736,
+        "y": 0.8042,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.6804,
+        "y": -1.4847,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 4.0284,
+        "y": -2.9414,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -2.1364,
+        "y": 1.5186,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 5.1654,
+        "y": -2.3822,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 0.5359,
+        "y": 0.3807,
+        "label": "malignant",
+        "cluster": 1
+      },
+      {
+        "x": 0.3431,
+        "y": 3.5345,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.1971,
+        "y": 2.3674,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.1428,
+        "y": 5.5995,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.6655,
+        "y": 2.3896,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 1.0117,
+        "y": 1.0924,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.3009,
+        "y": -1.8214,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.3734,
+        "y": -1.6816,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.6659,
+        "y": -0.214,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.9277,
+        "y": -1.1377,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.2372,
+        "y": 0.1843,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.6779,
+        "y": 2.3158,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.8365,
+        "y": 0.4962,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.5514,
+        "y": 0.2283,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.6949,
+        "y": -0.7675,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.025,
+        "y": 1.2612,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.8959,
+        "y": -1.4516,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.5022,
+        "y": 1.8008,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.1539,
+        "y": -0.8301,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -2.0551,
+        "y": 1.6165,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -3.8773,
+        "y": 1.0843,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.0639,
+        "y": 0.1222,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.0987,
+        "y": -0.2136,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -1.0894,
+        "y": 1.2928,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -0.4818,
+        "y": -0.178,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": -4.8703,
+        "y": -2.1311,
+        "label": "benign",
+        "cluster": 1
+      },
+      {
+        "x": 5.9176,
+        "y": 3.4826,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 8.7413,
+        "y": -0.5739,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 6.4393,
+        "y": -3.5768,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 3.7934,
+        "y": -3.584,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 1.2562,
+        "y": -1.9023,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": 10.3748,
+        "y": 1.672,
+        "label": "malignant",
+        "cluster": 0
+      },
+      {
+        "x": -5.4752,
+        "y": -0.6706,
+        "label": "benign",
+        "cluster": 1
+      }
+    ],
+    "projection_params": {
+      "scaler_mean": [
+        14.127292,
+        19.289649,
+        91.969033,
+        654.889104,
+        0.09636,
+        0.104341,
+        0.088799,
+        0.048919,
+        0.181162,
+        0.062798,
+        0.405172,
+        1.216853,
+        2.866059,
+        40.337079,
+        0.007041,
+        0.025478,
+        0.031894,
+        0.011796,
+        0.020542,
+        0.003795,
+        16.26919,
+        25.677223,
+        107.261213,
+        880.583128,
+        0.132369,
+        0.254265,
+        0.272188,
+        0.114606,
+        0.290076,
+        0.083946
+      ],
+      "scaler_scale": [
+        3.520951,
+        4.297255,
+        24.277619,
+        351.604754,
+        0.014052,
+        0.052766,
+        0.07965,
+        0.038769,
+        0.02739,
+        0.007054,
+        0.277069,
+        0.551163,
+        2.020077,
+        45.451013,
+        0.003,
+        0.017892,
+        0.03016,
+        0.006165,
+        0.008259,
+        0.002644,
+        4.828993,
+        6.140854,
+        33.573002,
+        568.856459,
+        0.022812,
+        0.157198,
+        0.208441,
+        0.065675,
+        0.061813,
+        0.018045
+      ],
+      "pca_components": [
+        [
+          0.218902,
+          0.103725,
+          0.227537,
+          0.220995,
+          0.14259,
+          0.239285,
+          0.2584,
+          0.260854,
+          0.138167,
+          0.064363,
+          0.205979,
+          0.017428,
+          0.211326,
+          0.20287,
+          0.014531,
+          0.170393,
+          0.15359,
+          0.183417,
+          0.042498,
+          0.102568,
+          0.227997,
+          0.104469,
+          0.23664,
+          0.224871,
+          0.127953,
+          0.210096,
+          0.228768,
+          0.250886,
+          0.122905,
+          0.131784
+        ],
+        [
+          -0.233857,
+          -0.059706,
+          -0.215181,
+          -0.231077,
+          0.186113,
+          0.151892,
+          0.060165,
+          -0.034768,
+          0.190349,
+          0.366575,
+          -0.105552,
+          0.08998,
+          -0.089457,
+          -0.152293,
+          0.20443,
+          0.232716,
+          0.197207,
+          0.130322,
+          0.183848,
+          0.280092,
+          -0.219866,
+          -0.045467,
+          -0.199878,
+          -0.219352,
+          0.172304,
+          0.143593,
+          0.097964,
+          -0.008257,
+          0.141883,
+          0.275339
+        ]
+      ]
+    }
+  },
+  "class_distribution": {
+    "malignant": 212,
+    "benign": 357
+  },
+  "feature_importances": [
+    {
+      "feature": "worst perimeter",
+      "importance": 0.1371
+    },
+    {
+      "feature": "worst area",
+      "importance": 0.1283
+    },
+    {
+      "feature": "worst concave points",
+      "importance": 0.112
+    },
+    {
+      "feature": "worst radius",
+      "importance": 0.0918
+    },
+    {
+      "feature": "mean concave points",
+      "importance": 0.0917
+    },
+    {
+      "feature": "mean radius",
+      "importance": 0.057
+    },
+    {
+      "feature": "mean perimeter",
+      "importance": 0.0538
+    },
+    {
+      "feature": "mean concavity",
+      "importance": 0.045
+    },
+    {
+      "feature": "mean area",
+      "importance": 0.0439
+    },
+    {
+      "feature": "worst concavity",
+      "importance": 0.0394
+    },
+    {
+      "feature": "area error",
+      "importance": 0.0316
+    },
+    {
+      "feature": "worst texture",
+      "importance": 0.0194
+    }
+  ]
+}
