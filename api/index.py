@@ -26,6 +26,18 @@ def get_bundle():
             print(f"Warning: Bundle not found at {BUNDLE_PATH}")
     return _bundle
 
+@app.route("/")
+def index():
+    return send_file(str(ROOT / "index.html"))
+
+@app.route("/styles.css")
+def styles():
+    return send_file(str(ROOT / "styles.css"))
+
+@app.route("/app.js")
+def app_js():
+    return send_file(str(ROOT / "app.js"))
+
 @app.route("/api/health")
 def health():
     bundle = get_bundle()
