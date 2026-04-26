@@ -3,18 +3,6 @@
     {
       "source": "/api/(.*)",
       "destination": "api/index.py"
-    },
-    {
-      "source": "/",
-      "destination": "/static/index.html"
-    },
-    {
-      "source": "/artifacts/(.*)",
-      "destination": "/artifacts/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/static/$1"
     }
   ]
 }
